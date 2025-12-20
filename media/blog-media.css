@@ -1,0 +1,158 @@
+@media only screen and (max-width: 575px) {
+  .nav {
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+  }
+  nav {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+
+  #logo {
+    margin-left: 20px;
+  }
+  #logo h1 {
+    font-size: 1.2rem;
+  }
+  #logo span {
+    font-size: 1.2rem;
+  }
+
+  .quote h1 {
+    font-size: 1.2rem;
+  }
+
+  .travel-partner img {
+    height: 50px;
+  }
+  #view-post{
+    transform: translateY(50px);
+    
+  }
+  #button{
+    width: max-content;
+    height: fit-content;
+  }
+  #button a{
+    font-size: .8em;
+  }
+ .quote {
+    transform: translateY(60px);
+  }
+  
+}
+/* ===========================================================================*/
+
+@media (max-width: 450px) {
+  
+
+  .quote h1 {
+    font-size: .7rem;
+    
+  }
+  .social img {
+    height: 50px;
+  }
+   header video{
+    height: 250px;
+  }
+  .post-col video{
+    height: 300px;
+  }
+  .profile-img img{
+    height: 40px;
+
+  }
+  .show-comment{
+    font-size: .7rem;
+  }
+  .show-comment h6{
+    font-size: .8srem;
+  }
+  .social img{
+    height: 50px;
+  }
+  
+}
+/* ===========================================================================*/
+
+@media (max-width: 399px) {
+  .quote {
+    transform: translatey(-60);
+  }
+  .quote h1 {
+    font-size: 0.7rem;
+  }
+
+  .travel-partner img {
+    height: 40px;
+  }
+  .copyright {
+    font-size: 0.7rem;
+  }
+  #goto-top img {
+   
+    height: 30px;
+  }
+  header video{
+    height: 250px;
+  }
+  .post-col video{
+    height: 250px;
+  }
+}
+/* ===========================================================================*/
+
+@media (max-width: 499px) {
+  #goto-top img {
+    bottom: 6%;
+    right: 45%;
+   
+  }
+  .post-col h5{
+    font-size: 1rem;
+  }
+  .post-col h3{
+    font-size: 1.2rem;
+  }
+ 
+}
+/* ===========================================================================*/
+
+@media(min-width:576px) and (max-width:767px){
+  .quote{
+    top:150px;
+  }
+  .quote h1{
+    font-size: 1.2rem;
+  }
+  #button{
+    height: 40px;
+    width: 160px;
+    
+  }
+  #view-post{
+    transform: translatey(50px);
+  }
+
+}
+/* ===========================================================================*/
+
+@media (min-width:450px)and (max-width:767px){
+  video{
+    height: 300px;
+  }
+.post-col video{
+  height: 300px;
+}
+  header video {
+  height: 300px;
+}
+
+
+}
+
+

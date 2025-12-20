@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About us</title>
+    <link rel="stylesheet" href="/css/about-us.css" />
+    <link rel="stylesheet" href="/media/about-media.css" />
+    <!--Bootstrap css-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <link rel="icon" href="/images/airplane.png" type="image/x-icon" />
+  </head>
+  <body id="body">
+
+
+
+    <header>
+
+      <!--header start-->
+      <div class="container-fluid nav">
+        <!--logo -->
+        <div id="logo">
+          <h1 class="holiday">Holiday</h1>
+          <span class="tour">Tour</span>
+        </div>
+
+        <!--nav bar-->
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li class="active"><a href="about-us.html">About us</a></li>
+            <li><a href="book.html">Book a Travel</a></li>
+          </ul>
+        </nav>
+
+        <!--menu button -->
+        <div class="menu">
+          <button onclick="show()">
+            <img src="/images/menu-bar.png" alt="" />
+          </button>
+        </div>
+      </div>
+
+      <!--Drop down-->
+      <div id="drop-down">
+        <ul class="drop-down">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about-us.html">About us</a></li>
+          <li><a href="book.html">Book a Travel</a></li>
+        </ul>
+      </div>
+
+      <!--header image-->
+      <div class="header-img" id="top">
+        <img src="/images/about-us-header.jpg" alt="" class="img-fluid" />
+      </div>
+    </header>
+
+    <div class="containers">
+      <!--about us summary-->
+      <section>
+        <h2>About Us</h2>
+        <p>
+          Welcome to <strong>Holiday Tour</strong>! We are a group of travel
+          lovers who believe that the best memories are made on the road. From
+          hidden local gems to famous landmarks, we share real stories, tips,
+          and adventures from around the world.
+        </p>
+      </section>
+
+
+      <!--our story summary-->
+      <section>
+        <h2>Our Story</h2>
+        <p>
+          Our journey started with a single trip and a shared love for exploring
+          new cultures. What began as a hobby turned into a travel blog where we
+          document experiences, inspire others, and prove that travel is about
+          connection—not just destinations.
+        </p>
+      </section>
+
+
+      <!--team details-->
+      <section>
+
+        <!--first guy-->
+        <h2>Meet the Team</h2>
+        <div class="team">
+          <div class="cards">
+            <img src="/images/aout-us1.jpg" alt="Team Member" />
+            <h3>Alex</h3>
+            <p>Photographer & Adventure Seeker</p>
+          </div>
+
+          <!--second guy-->
+          <div class="cards">
+            <img src="/images/about-us2.webp" alt="Team Member" />
+            <h3>Jamie</h3>
+            <p>Writer & Culture Explorer</p>
+          </div>
+
+
+          <!--third guy-->
+          <div class="cards">
+            <img src="/images/about-us3.avif" alt="Team Member" />
+            <h3>Taylor</h3>
+            <p>Planner & Budget Travel Expert</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!--footer section-->
+    <footer>
+      <!--copyright-->
+      <div class="col copyright">
+        <p>
+          <strong>&copy;copyright reserved 2025 - 2026 Holiday Tour</strong>
+        </p>
+      </div>
+    </footer>
+
+    <!--Bootstrap js-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      let menu = document.querySelector("#drop-down");
+      function show() {
+        menu.classList.toggle("toogle");
+      }
+    </script>
+  </body>
+</html>

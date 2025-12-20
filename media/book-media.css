@@ -1,0 +1,134 @@
+@media only screen and (max-width: 575px) {
+  .nav {
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+  }
+  nav {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+
+  #logo {
+    margin-left: 20px;
+  }
+  #logo h1 {
+    font-size: 1.2rem;
+  }
+  #logo span {
+    font-size: 1.2rem;
+  }
+.header-img img{
+    height: 300px;
+}
+
+}
+/* ===========================================================================*/
+
+
+@media (max-width: 399px) {
+
+  .copyright strong{
+    font-size: 0.7rem;
+  }
+  #goto-top img {
+    height: 30px;
+  }
+  .header-img img{
+    height: 250px;
+}
+
+}
+/* ===========================================================================*/
+
+@media (max-width: 768px) {
+
+#vlog h1{
+    font-size: 1rem;
+}
+
+}
+/* ===========================================================================*/
+
+@media (max-width: 599px) {
+
+#vlog h1{
+    font-size: 1rem;
+}
+    
+.feature::before {
+  content: "";
+  width: 20%;
+  background: #cfcfcf;
+  background: linear-gradient(
+    90deg,
+    rgba(207, 207, 207, 0.4) 0%,
+    rgba(20, 20, 20, 0.295) 50%
+  );
+  height: 1px;
+  display: block;
+  margin: 20px;
+}
+.feature::after {
+  content: "";
+  width: 20%;
+  background: #030202;
+  background: linear-gradient(
+    90deg,
+    rgba(20, 20, 20, 0.295) 0%,
+    rgba(207, 207, 207, 0.4) 100%
+  );
+  height: 1px;
+  display: block;
+  margin: 20px;
+}
+
+}
+/* ===========================================================================*/
+
+@media (max-width: 399px) {
+
+#vlog h1{
+    font-size: .7rem;
+}
+    
+.feature::before {
+  content: "";
+  width: 20%;
+  background: #cfcfcf;
+  background: linear-gradient(
+    90deg,
+    rgba(207, 207, 207, 0.4) 0%,
+    rgba(20, 20, 20, 0.295) 50%
+  );
+  height: 1px;
+  display: block;
+  margin: 20px;
+}
+.feature::after {
+  content: "";
+  width: 20%;
+  background: #030202;
+  background: linear-gradient(
+    90deg,
+    rgba(20, 20, 20, 0.295) 0%,
+    rgba(207, 207, 207, 0.4) 100%
+  );
+  height: 1px;
+  display: block;
+  margin: 20px;
+}
+
+}
+   /* ===========================================================================*/
+ 
+
+@media (min-width: 769px) and (max-width: 1130px){
+    #vlog h1{
+        font-size: 1.5rem;
+    }
+}
+
+

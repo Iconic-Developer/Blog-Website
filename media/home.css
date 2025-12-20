@@ -1,0 +1,118 @@
+@media only screen and (max-width: 575px) {
+  .nav {
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+  }
+  nav {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+
+  #logo {
+    margin-left: 20px;
+  }
+  #logo h1 {
+    font-size: 1.2rem;
+  }
+  #logo span {
+    font-size: 1.2rem;
+  }
+
+  .quote h1 {
+    font-size: 1.2rem;
+  }
+  .explore-button {
+    height: 30%;
+    width: 20%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  .explore-button a {
+    font-size: 50%;
+  }
+
+  .travel-partner img {
+    height: 50px;
+  }
+
+}
+
+/* ===========================================================================*/
+
+@media (max-width: 450px) {
+  .quote {
+    top: 50px;
+  }
+  .explore {
+    top: 90px;
+  }
+
+  .explore-button {
+    height: 15px;
+    width: 60px;
+    font-size: 0.9rem;
+  }
+
+  .quote h1 {
+    font-size: 1rem;
+    top: 60px;
+  }
+  .social img {
+    height: 50px;
+  }
+}
+/* ===========================================================================*/
+
+@media (max-width: 399px) {
+  .quote {
+    top: 50px;
+  }
+  .quote h1 {
+    font-size: 0.7rem;
+  }
+  .explore-button {
+    width: 60px;
+    height: 15px;
+    font-size: 0.8rem;
+  }
+  .explore {
+    top: 82px;
+  }
+  .travel-partner img {
+    height: 40px;
+  }
+  .copyright {
+    font-size: 0.7rem;
+  }
+  #goto-top img {
+    height: 30px;
+  }
+}
+/* ===========================================================================*/
+
+@media (max-width: 499px) {
+  #goto-top img {
+    bottom: 5%;
+    right: 45%;
+  }
+}
+/* ===========================================================================*/
+
+@media(min-width:576px) and (max-width:767px){
+  .quote h1{
+    font-size: 1.3rem;
+  }
+  .explore-button{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    font-weight: normal;
+  }
+  .explore-button a{
+font-size: .8rem;  
+}
+}

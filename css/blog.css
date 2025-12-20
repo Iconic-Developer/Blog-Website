@@ -1,0 +1,414 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Audiowide&family=Caprasimo&family=Dancing+Script:wght@400..700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Metrophobic&family=Pacifico&family=Seymour+One&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===========================================================================*/
+
+
+header {
+  position: relative;
+}
+header video{
+  height: 500px;
+}
+
+#logo{
+  transition: all .5s;
+}
+#logo:hover{
+  transform: scale(1.2);
+}
+
+
+#header video {
+  object-fit: cover;
+}
+
+/* Heading section ==================================================================*/
+.holiday {
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+  color: yellow;
+  font-size: 32px;
+  display: inline-block;
+}
+.tour {
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+  color: white;
+  font-size: 32px;
+  display: inline-block;
+}
+
+/* ===========================================================================*/
+
+
+.nav {
+  height: 60px;
+  background-color: #030202;
+  display: flex;
+  justify-content: space-around;
+  align-items:  baseline;
+}
+
+
+nav{
+  height: 100%;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+ gap: 20px;
+
+}
+
+
+
+nav ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 20px;
+  transition: all .5s;
+}
+
+nav ul li :hover{
+color: red;
+}
+
+.active a {
+color: red;
+}
+.active a:hover{
+  color: white;
+}
+/* ===========================================================================*/
+
+.menu {
+  height: 24px; 
+  display: none;
+  
+}
+.menu button {
+  background-color: whitesmoke;
+  border-radius: 8px;
+  height: 24px;
+  width: 27px;
+  display: flex;
+  align-items: center;
+  
+}
+.menu button img {
+  height: 24px;
+}
+/* ============================================================================================ */
+.toogle{
+  transform: translatey(260px);
+  transition: all .6s linear;
+}
+#drop-down {
+  position: absolute;
+  background-color: rgb(8, 114, 118);
+  z-index: 1;
+  width: 100%;
+  transition: all .6s linear;
+  top: -220px;
+  }
+.drop-down {
+  position: relative;
+  right: 15px;
+  text-align: center;
+  list-style-type: none;
+  width: 100%;
+  margin-top: 15px;
+
+}
+#drop-down li {
+  border: 1px solid white;
+  padding: 10px;
+
+}
+#drop-down li a {
+  text-decoration: none;
+  color: white;
+ 
+}
+
+
+/* ===========================================================================*/
+
+
+.quote {
+  font-family: "Dancing Script", cursive;
+  position: absolute;
+  text-align: center;
+  top: 30%;
+  color: white;
+}
+
+/* ===========================================================================*/
+
+#view-post {
+  position: absolute;
+  bottom: 30%;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s;
+}
+
+#button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 200px;
+  border: 3px solid white;
+}
+#button a {
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+}
+
+#view-post:hover{
+  transform: scale(1.2);
+}
+/* ===========================================================================*/
+
+
+.feature {
+  color: rgb(59, 56, 56);
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.feature::before {
+  content: "";
+  width: 30%;
+  background: #cfcfcf;
+  background: linear-gradient(
+    90deg,
+    rgba(207, 207, 207, 0.4) 0%,
+    rgba(20, 20, 20, 0.295) 50%
+  );
+  height: 1px;
+  display: block;
+  margin: 20px;
+}
+.feature::after {
+  content: "";
+  width: 30%;
+  background: #030202;
+  background: linear-gradient(
+    90deg,
+    rgba(20, 20, 20, 0.295) 0%,
+    rgba(207, 207, 207, 0.4) 100%
+  );
+  height: 1px;
+  display: block;
+  margin: 20px;
+}
+/* ===========================================================================*/
+
+
+.post-col{
+  width: 100%;
+}
+
+.post-col video{
+    height: 550px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* ===========================================================================*/
+.commnents{
+    display: flex;
+    height: 40px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9dfdf80;
+    border-radius: 30px;
+    padding: 10px;
+
+}
+
+.commnents input{
+    background-color: transparent;
+    width: 60%;
+    border: none;
+}
+input:focus{    
+    outline: none;
+    border: none;
+}
+
+#send{
+    border: none;
+   position: relative;
+   left: 35px;
+}
+#emoji{
+    position: relative;
+   border: none;
+   left: 25px;   
+}
+/* ===========================================================================*/
+
+
+.show-comment button{
+    background-color: transparent;
+    border: none;
+    color: blue;
+    padding-left: 5px;
+}
+/* ===========================================================================*/
+
+#about {
+  background-color: antiquewhite;
+ text-align: center;
+}
+
+#left{
+  margin-top: 20px;
+}
+/* ===========================================================================*/
+
+.comment-section {  
+  max-width: 600px;
+  margin: 30px auto;
+  background: antiquewhite;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.comment-section h3 {
+  margin-bottom: 15px;
+}
+
+.comment {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background: #4a90e2;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.comment-content h4 {
+  text-align: left;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.comment-content h4 span {
+  font-size: 12px;
+  color: #888;
+}
+
+.comment-content p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+#input{
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: none;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+#input textarea{
+  width: 100%;
+  height: 50%;
+  resize: none;
+  border: none;
+}
+textarea:focus{
+  outline: none;
+}
+.gallery{
+  display: flex;
+  justify-content: space-between;  
+}
+.media img{
+  margin-left: 5px;
+}
+#post{
+  height: 24px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#input h6{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* ===========================================================================*/
+.goto-top {
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+}
+/* ===========================================================================*/
+
+
+
+#contact{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  font-family: "Dancing Script", cursive;
+}
+#contact h3{
+  font-size: 47px;
+}
+
+/* ===========================================================================*/
+
+#holiday{
+  display: flex;
+}
+#holiday{
+  display: flex;
+}
+
+/* ===========================================================================*/
+ 
+footer{
+  position: relative;
+}
+
+/* ===========================================================================*/
+
+#goto-top img{
+  height: 40px;
+}
