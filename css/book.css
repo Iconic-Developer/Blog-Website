@@ -8,8 +8,12 @@
     box-sizing: border-box;
 }
 body {
+  position: relative;
     margin: 0;
     background: #f4f4f4;
+}
+header{
+  position:relative;
 }
 /* ===========================================================================*/
 
@@ -224,6 +228,7 @@ color: red;
 /* ===========================================================================*/
 
 .containers {
+  position: relative;
     max-width: 1000px;
     margin: auto;
     padding: 20px;
@@ -234,6 +239,8 @@ color: red;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    font-weight: bold ;
 }
 
 h2 {

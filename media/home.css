@@ -38,6 +38,9 @@
   .travel-partner img {
     height: 50px;
   }
+  .header-img img {
+  height: 250px;
+}
 
 }
 
@@ -45,10 +48,10 @@
 
 @media (max-width: 450px) {
   .quote {
-    top: 50px;
+    transform: translateY(20px);
   }
   .explore {
-    top: 90px;
+    transform: translateY(20px);
   }
 
   .explore-button {
@@ -58,8 +61,7 @@
   }
 
   .quote h1 {
-    font-size: 1rem;
-    top: 60px;
+    font-size: 1.5srem;
   }
   .social img {
     height: 50px;
@@ -69,10 +71,10 @@
 
 @media (max-width: 399px) {
   .quote {
-    top: 50px;
+    transform: translateY(30px);
   }
   .quote h1 {
-    font-size: 0.7rem;
+    font-size: .9rem;
   }
   .explore-button {
     width: 60px;
@@ -80,7 +82,7 @@
     font-size: 0.8rem;
   }
   .explore {
-    top: 82px;
+    transform: translateY(20px);
   }
   .travel-partner img {
     height: 40px;
@@ -102,9 +104,9 @@
 }
 /* ===========================================================================*/
 
-@media(min-width:576px) and (max-width:767px){
+@media(min-width:576px) and (max-width:768px){
   .quote h1{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   .explore-button{
     width: 100px;
@@ -115,4 +117,68 @@
   .explore-button a{
 font-size: .8rem;  
 }
+.header-img img{
+  height: 500px;
+}
+}
+
+/* ================================================================================== */
+#email-box{
+   width: 100%;
+    z-index: 10;
+    bottom:10%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.emails{
+height: auto;
+width: 300px;
+background-color:cadetblue;
+text-align: center;
+padding: 10px;
+border-radius: 15px;
+
+
+
+   
+}
+.emails h1{
+  margin: 10px;
+    color: black;
+    font-weight: bolder;
+
+}
+.emails h3{
+  font-size: 18px;
+    color: black;
+    line-height: 50px;
+
+}
+
+@media(min-width:769px) and (max-width:1024px){
+    #email-box{
+        bottom: 15%;
+
+    }
+}
+@media(min-width:576px) and (max-width:768px){
+    #email-box{
+        bottom: 10%;
+
+    }
+}
+@media(min-width:399px) and (max-width:575px){
+    #email-box{
+        bottom: 10%;
+
+    }
+}
+@media(min-width:300px) and (max-width:398px){
+    #email-box{
+        bottom: 7%;
+
+    }
 }

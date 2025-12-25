@@ -6,8 +6,9 @@
     <title>Holiday Tour</title>
 
     <!--local css-->
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/media/home.css" />
+   
+    <link rel="stylesheet" href="/css/index.css" />
+     <link rel="stylesheet" href="/media/home.css" />
 
     <!--Bootstrap css-->
     <link
@@ -20,6 +21,20 @@
     <link rel="icon" href="/images/airplane.png" type="image/x-icon" />
   </head>
   <body>
+
+    <!--Email pop up-->
+      <div class="container-fluid" id="email-box">
+        <div class="emails">
+          <img src="/images/confirmed.png" alt="">
+          <h1>Thank You</h1>
+          <h3>Your E-mail has been sent!</h3>
+          <button id="close" class="btn">
+            <img src="/images/close.png" alt="" />
+          </button>
+        </div>
+      </div>
+
+
     <!--Navigation bar-->
     <header>
       <div class="container-fluid nav" id="top">
@@ -30,10 +45,10 @@
 
         <nav>
           <ul>
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="about-us.html">About us</a></li>
-            <li><a href="book.html">Book a Travel</a></li>
+            <li class="active"><a href="/index.html">Home</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/about-us.html">About us</a></li>
+            <li><a href="/book.html">Book a Travel</a></li>
           </ul>
         </nav>
 
@@ -48,10 +63,10 @@
       <!--Drop down-->
       <div id="drop-down">
         <ul class="drop-down">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="about-us.html">About us</a></li>
-          <li><a href="book.html">Book a Travel</a></li>
+         <li class="active"><a href="/index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about-us.html">About us</a></li>
+            <li><a href="book.html">Book a Travel</a></li>
         </ul>
       </div>
 
@@ -238,46 +253,53 @@
             </div>
 
             <!--right col contact us form-->
+            
             <div class="col mb-4">
               <h3 class="contact-us">Contact us</h3>
+              
               <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label"
+                <label for="name" class="form-label"
                   >Name</label
-                >
+                ><span id="requird"></span>
                 <input
                   type="text"
                   class="form-control"
-                  id="exampleFormControlInput1"
+                  id="name"
                   placeholder="Enter your name"
                 />
+                <div id="name-err"></div>
               </div>
               <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label"
+                <label for="email" class="form-label"
                   >Email address</label
                 >
                 <input
                   type="email"
                   class="form-control"
-                  id="exampleFormControlInput1"
-                  placeholder="name@example.com"
+                  id="email"
+                  placeholder="name@example.com" 
                 />
+                <div id="email-err"></div>
               </div>
               <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label"
+                <label for="message" class="form-label"
                   >Leave a message</label
                 >
                 <textarea
                   class="form-control"
-                  id="exampleFormControlTextarea1"
+                  id="message"
                   rows="3"
                   placeholder="Tell me about your experience..."
                 ></textarea>
+                <div id="mes-err"></div>
               </div>
 
-              <button class="btn btn-large" id="send" type="submit">
+              <button  class="btn btn-large" id="send" type="button">
                 Send
-              </button>
+              </button> 
+              
             </div>
+            
           </div>
         </div>
 
@@ -289,6 +311,9 @@
             </p>
           </div>
         </div>
+
+ 
+
       </div>
 
       <!--go to top section-->
@@ -297,18 +322,50 @@
       /></a>
     </footer>
 
+
+
+
+
+
+
     <!--Bootstrap js-->
+    <script src="/Blog-js/blog.js"></script>
+
+    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
 
+
+
+    <!-- menubar script -->
     <script>
       let menu = document.querySelector("#drop-down");
       function show() {
         menu.classList.toggle("toogle");
       }
     </script>
+
+
+<!-- emailjs npm -->
+     <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+
+<!-- emalil js script -->
+
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "uhLegOYq-vixRgpgj",
+        });
+      })();
+    </script>
+
+
   </body>
 </html>

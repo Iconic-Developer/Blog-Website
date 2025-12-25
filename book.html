@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book Your Travel</title>
     <link rel="stylesheet" href="/css/book.css" />
+    <link rel="stylesheet" href="/css/ticket.css" />
     <link rel="stylesheet" href="/media/book-media.css" />
     <!--Bootstrap css-->
     <link
@@ -18,6 +19,151 @@
   </head>
 
   <body>
+    <!--Email pop up-->
+    <div class="container-fluid" id="email-box">
+      <div class="emails">
+        <h1>Thank You</h1>
+        <img src="/images/confirmed.png" alt="" />
+        <h3>Your booking has been confirmed!</h3>
+        <button id="view" class="btn btn-large btn-primary">View</button>
+        <button id="close" class="btn btn-large btn-danger">CLose</button>
+      </div>
+    </div>
+
+    <!--===================================================================================================-->
+    <div class="ccontainer-fluid" id="tkt-container">
+      <div id="tkt-head"><h1>Passengers Details</h1></div>
+
+      <div class="container d-flex justify-content-center">
+        <div class="detail-box">
+          <div class="row">
+            <div class="col-5 col-sm-4 d-flex justify-content-start">
+              <p><strong>Name</strong></p>
+            </div>
+            <div class="col-1 col-sm-2 d-flex justify-content-center">
+              <p><strong>:</strong></p>
+            </div>
+            <div
+              class="col-6 col-sm-6 d-flex justify-content-start"
+              id="pname"
+            ></div>
+          </div>
+          <div class="row">
+            <div class="col-5 col-sm-4 d-flex justify-content-start">
+              <p><strong>E-mail</strong></p>
+            </div>
+            <div class="col-1 col-sm-2 d-flex justify-content-center">
+              <p><strong>:</strong></p>
+            </div>
+            <div
+              class="col-6 col-sm-6 d-flex justify-content-start"
+              id="pemail"
+            ></div>
+          </div>
+          <div class="row">
+            <div class="col-5 col-sm-4 d-flex justify-content-start">
+              <p><strong>Mobile</strong></p>
+            </div>
+            <div class="col-1 col-sm-2 d-flex justify-content-center">
+              <p><strong>:</strong></p>
+            </div>
+            <div
+              class="col-6 col-sm-6 d-flex justify-content-start"
+              id="pmobile"
+            ></div>
+          </div>
+          <div class="row">
+            <div class="col-5 col-sm-4 d-flex justify-content-start">
+              <p><strong>Destination</strong></p>
+            </div>
+            <div class="col-1 col-sm-2 d-flex justify-content-center">
+              <p><strong>:</strong></p>
+            </div>
+            <div
+              class="col-6 col-sm-6 d-flex justify-content-start"
+              id="pdestination"
+            ></div>
+          </div>
+          <div class="row">
+            <div class="col-5 col-sm-4 d-flex justify-content-start">
+              <p><strong>Travelers</strong></p>
+            </div>
+            <div class="col-1 col-sm-2 d-flex justify-content-center">
+              <p><strong>:</strong></p>
+            </div>
+            <div
+              class="col-6 col-sm-6 d-flex justify-content-start"
+              id="ptravelers"
+            ></div>
+          </div>
+          <div class="row">
+            <div class="col-5 col-sm-4 d-flex justify-content-start">
+              <p><strong>Transport</strong></p>
+            </div>
+            <div class="col-1 col-sm-2 d-flex justify-content-center">
+              <p><strong>:</strong></p>
+            </div>
+            <div
+              class="col-6 col-sm-6 d-flex justify-content-start"
+              id="travelType"
+            ></div>
+          </div>
+          <div class="row">
+            <div class="col-5 col-sm-4 d-flex justify-content-start">
+              <p><strong>Class</strong></p>
+            </div>
+            <div class="col-1 col-sm-2 d-flex justify-content-center">
+              <p><strong>:</strong></p>
+            </div>
+            <div
+              class="col-6 col-sm-6 d-flex justify-content-start"
+              id="pclass"
+            ></div>
+          </div>
+          <div class="row">
+            <div class="col-5 col-sm-4 d-flex justify-content-start">
+              <p><strong>Departure</strong></p>
+            </div>
+            <div class="col-1 col-sm-2 d-flex justify-content-center">
+              <p><strong>:</strong></p>
+            </div>
+            <div
+              class="col-6 col-sm-6 d-flex justify-content-start"
+              id="dDate"
+            ></div>
+          </div>
+          <div class="row">
+            <div class="col-5 col-sm-4 d-flex justify-content-start">
+              <p><strong>Return</strong></p>
+            </div>
+            <div class="col-1 col-sm-2 d-flex justify-content-center">
+              <p><strong>:</strong></p>
+            </div>
+            <div
+              class="col-6 col-sm-6 d-flex justify-content-start"
+              id="retdate"
+            ></div>
+          </div>
+          <div class="row">
+            <div class="col-5 col-sm-4 d-flex justify-content-start">
+              <p><strong>Request</strong></p>
+            </div>
+            <div class="col-1 col-sm-2 d-flex justify-content-center">
+              <p><strong>:</strong></p>
+            </div>
+            <div
+              class="col-6 col-sm-6 d-flex justify-content-start"
+              id="addinfo"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <div id="tkt-close">
+        <button class="btn tkt-close">
+          <img src="/images/close.png" alt="" />
+        </button>
+      </div>
+    </div>
     <header>
       <!--logo-->
       <div class="container-fluid nav">
@@ -26,17 +172,17 @@
           <span class="tour">Tour</span>
         </div>
 
-
         <!--nav bar-->
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="about-us.html">About us</a></li>
-            <li class="active"><a href="book.html">Book a Travel</a></li>
+            <li class="active">
+              <a href="book.html">Book a Travel</a>
+            </li>
           </ul>
         </nav>
-
 
         <!--hamburger menu-->
         <div class="menu">
@@ -52,7 +198,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="about-us.html">About us</a></li>
-          <li><a href="book.html">Book a Travel</a></li>
+          <li class="active"><a href="book.html">Book a Travel</a></li>
         </ul>
       </div>
 
@@ -60,6 +206,8 @@
       <div class="header-img" id="top">
         <img src="/images/book.avif" alt="" class="img-fluid" />
       </div>
+
+      <!-- ==================================================================================== -->
     </header>
     <!--book travel heading-->
     <div id="header">
@@ -74,82 +222,152 @@
       </div>
     </section>
 
-
     <!--travel booking form start-->
     <div class="containers">
       <div class="booking-box">
         <form>
           <!--name section-->
           <div class="input-box">
-            <label>Full Name</label>
+            <label for="name">Full Name</label>
             <span>👤</span>
-            <input type="text" placeholder="Enter your name" />
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              class="inputs"
+            />
+
+            <div id="name-err" class="input-error"></div>
+            <div></div>
           </div>
+
           <!--email section-->
           <div class="input-box">
-            <label>Email</label>
+            <label for="email">Email</label>
             <span>📧</span>
-            <input type="email" placeholder="Enter your email" />
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              class="inputs"
+            />
+
+            <div id="email-err" class="input-error"></div>
           </div>
+
           <!--destination section-->
           <div class="input-box">
-            <label>Destination</label>
-            <span>📍</span>
-            <input type="text" placeholder="Where do you want to go?" />
+            <label for="mobile">Mobile</label>
+            <span>📞</span>
+            <input
+              type="number"
+              id="mobile"
+              placeholder="Enter your mobile no."
+              class="inputs"
+            />
+
+            <div id="mobile-err" class="input-error"></div>
           </div>
+
+          <div class="input-box">
+            <label for="destination">Destination</label>
+            <span>📍</span>
+            <input
+              type="text"
+              id="destination"
+              placeholder="Where do you want to go?"
+              class="inputs"
+            />
+
+            <div id="destination-err" class="input-error"></div>
+          </div>
+
           <!--travel type-->
           <div class="input-box">
-            <label>Travel Type</label>
+            <label for="transport">Travel Type</label>
             <span>✈️</span>
-            <select>
-              <option>Flight</option>
-              <option>Train</option>
-              <option>Bus</option>
-              <option>Cruise</option>
+            <select id="transport" name="transport" class="inputs">
+              <option value="">Select</option>
+              <option value="flight">Flight</option>
+              <option value="train">Train</option>
+              <option value="bus">Bus</option>
+              <option value="cruis">Cruise</option>
             </select>
-          </div>
 
-
-          <!--departure section-->
-          <div class="input-box">
-            <label>Departure Date</label>
-            <span>📅</span>
-            <input type="date" />
-          </div>
-          <!--return date-->
-          <div class="input-box">
-            <label>Return Date</label>
-            <span>📆</span>
-            <input type="date" />
+            <div id="transp-err" class="select-error"></div>
           </div>
 
           <!--travelers-->
           <div class="input-box">
-            <label>Travelers</label>
+            <label for="number">Travelers</label>
             <span>👥</span>
-            <input type="number" min="1" value="1" />
+            <input type="number" id="number" placeholder="0" class="inputs" />
+
+            <div id="travelr-err" class="input-error"></div>
+          </div>
+
+          <!--departure section-->
+          <div class="input-box">
+            <label for="jdate">Departure Date</label>
+            <span>📅</span>
+            <input
+              type="date"
+              id="jdate"
+              min=""
+              placeholder="dd-mm-yyyy"
+              class="inputs"
+            />
+
+            <div id="jdate-err" class="input-error"></div>
+          </div>
+
+          <!--return date-->
+          <div class="input-box">
+            <label for="rdate">Return Date</label>
+            <span>📆</span>
+            <input
+              type="date"
+              min=""
+              id="rdate"
+              placeholder="dd-mm-yyyy"
+              class="inputs"
+            />
+
+            <div id="rdate-err" class="input-error"></div>
           </div>
 
           <!--class section-->
           <div class="input-box">
-            <label>Class</label>
+            <label for="class">Class</label>
             <span>💺</span>
-            <select>
-              <option>Economy</option>
-              <option>Business</option>
-              <option>First Class</option>
+            <select id="class">
+              <option value="">Select</option>
+              <option value="business">Business</option>
+              <option value="economy">Economy</option>
             </select>
+
+            <div id="class-err" class="select-error"></div>
           </div>
 
           <div class="input-box full-width">
-            <label>Additional Requests</label>
+            <label for="additional">Additional Requests</label>
             <span>📝</span>
-            <input type="text" placeholder="Meals, seats, etc." />
+            <input
+              type="text"
+              id="additional"
+              placeholder="Meals, seats, etc."
+              class="inputs"
+            />
+
+            <div id="add-err" class="input-error"></div>
           </div>
 
           <!--book now heading-->
           <div class="full-width">
-            <button class="btns">Book Now</button>
+            <button type="button" onclick="showDetails()" class="btns">
+              Book Now
+            </button>
+            <div id="check"></div>
           </div>
         </form>
       </div>
@@ -176,5 +394,6 @@
         menu.classList.toggle("toogle");
       }
     </script>
+    <script src="/Blog-js/ticket.js"></script>
   </body>
 </html>

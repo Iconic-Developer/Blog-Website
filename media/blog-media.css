@@ -103,6 +103,12 @@
   .post-col video{
     height: 250px;
   }
+  .gmail, .call{
+    font-size: .7rem;
+  }
+  .comment-content p{
+    text-align: left;
+  }
 }
 /* ===========================================================================*/
 
